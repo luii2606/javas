@@ -35,6 +35,7 @@ cadena= 'Habia una vez una iguana, \
 con una ruana de lana \
 peinandose la melena';
 console.log(cadena); 
+console.clear();
 
 // Numbers
 num=234;
@@ -123,10 +124,10 @@ const residuo = 7 % 3;
 console.log(suma); // 30
 console.log(residuo); // 1
 
-// Operadores de Asignación
-let numero = 10;
-numero += 5; // Suma 5 al valor de numero
-console.log(numero); // 15
+// // Operadores de Asignación
+// let numero = 10;
+// numero += 5; // Suma 5 al valor de numero
+// console.log(numero); // 15
 
 // Operadores de Comparación
 console.log(10 === "10"); // false (estricta)
@@ -152,6 +153,7 @@ console.log(mensaje); // Mayor de edad
 console.log(typeof "Hola"); // string
 console.log(typeof 42); // number
 console.log(typeof true); // boolean
+console.clear();
 
 // Tipos de condicionales
 
@@ -161,5 +163,50 @@ console.log(typeof true); // boolean
 //     console.log("Eres mayor de edad.");
 // }
 
+// let num = 12.34;
+// alert( num.toFixed(1) ); 
+// console.clear();
 
+// ingresar numeros
+
+// let entrada= prompt("Quieres ser mi novio? :3");
+// console.log(entrada);
+// alert(respuet); //imptimir
+// let respuet= confirm("salir del porgrama?");
+// console.log(respuet);
+
+
+// -----------
+
+
+
+const esprimo = function (numero){
+    let contador = 0;
+
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i === 0) {
+            contador++;
+            
+            
+        }
+    }
+        if (contador > 2) {
+            return "no es un número primo";
+            
+        }else if(contador == 2){
+            return "es un número primo";
+
+        }
+        else{
+            return "no es primo";
+            
+        }
+}
+let numero = parseInt(prompt("Ingrese el numero"));
+console.log(esprimo(numero));
+console.clear();
+
+(function () {
+    alert("sin llamarme") 
+})()
 
