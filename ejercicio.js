@@ -305,7 +305,54 @@ let numero = parseInt(prompt("Ingrese el numero"));
 console.log(esprimo(numero));
 console.clear();
 
-(function () {
-    alert("sin llamarme") 
-})()
+// (function () {
+//     alert("sin llamarme") ;
+// })()
+console.clear();
+
+// ---arreglos
+
+const v= [1, "letras", true, false [1, "letras"]];
+ console.log(v[v.length -1]); //mostrar el ultimo
+ 
+
+ // objetos
+
+ 
+
+const people = {
+    nombre: "Valentina",
+    edad: 17,
+    esEstudiante: true,
+    saludar: function() {
+        return `Hola, me llamo ${this.nombre} y tengo ${this.edad} años.`;
+    }
+};
+
+console.log(people.nombre); // Valentina (acceder a una propiedad)
+console.log(people["edad"]); // 17 (otra forma de acceder)
+console.log(people.saludar()); // Hola, me llamo Valentina y tengo 17 años.
+
+people.pais = "Colombia"; //agregar atributos al objeto
+people.genero = "femenino";
+
+people.despedida = function() {
+    return `chao se despide ${this.nombre}`
+}
+// console.log(people.saludar()); 
+
+// console.log(Object.keys(people).indexOf ("nombre"));
+
+ if (Object.keys(people).indexOf ("genero") === -1) {
+    console.log("el genero no fue definido");
+    
+}
+
+
+
+
+
+
+
+
 
