@@ -161,5 +161,104 @@ console.log(typeof true); // boolean
 //     console.log("Eres mayor de edad.");
 // }
 
+// ciclos
+// for
+
+for (let i = 0; i < 5; i++) {
+    console.log(`Iteración: ${i}`);
+}
+
+// while
+let j = 0;
+while (j < 5) {
+    console.log(`Iteración: ${j}`);
+    j++;
+}
+// do while
+let t = 0;
+do {
+    console.log(`Iteración: ${t}`);
+    t++;
+} while (t < 5);
+
+// for of
+
+const frutas = ['Manzana', 'Banana', 'Cereza'];
+for (const fruta of frutas) {
+    console.log(fruta);
+}
+
+// for in
+
+const sujeto = { nombre: 'Luisa', edad: 15, ciudad: 'Buacaramanga' };
+for (const propiedad in sujeto) {
+    console.log(`${propiedad}: ${sujeto[propiedad]}`);
+}
+
+
+// {
+  
+
+//   for (let u = 0; u < 10; u++) {
+//     let nume = 0;
+//     nume += u;
+//     console.log("numero:"+nume);
+//   }
+   
+// }
+
+// manejo de errores
+try {
+    // Bloque de código que puede causar un error
+    let resultado = 10 / 0;
+    console.log(`El resultado es: ${resultado}`);
+
+    // Lanzamos un error manualmente
+    throw new Error('Se generó un error personalizado.');
+} catch (error) {
+    // Este bloque captura el error
+    console.error('Ocurrió un error:', error.message);
+} finally {
+    // Este bloque siempre se ejecuta
+    console.log('Operación finalizada.');
+}
+
+// break
+
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        console.log('Se encontró el número 5. Deteniendo el bucle.');
+        break; // Sale del bucle aquí
+    }
+    console.log(`Número: ${i}`);
+}
+
+// continue
+
+for (let p = 0; p < 10; p++) {
+    if (p % 2 === 0) {
+        continue; // Salta a la siguiente iteración si el número es par
+    }
+    console.log(`Número impar: ${p}`);
+}
+
+// destructuración
+const colores = ['rojo', 'verde', 'azul'];
+
+// Destructuración del arreglo
+const [primero, segundo, tercero] = colores;
+
+console.log(primero);  // rojo
+console.log(segundo);  // verde
+console.log(tercero);  // azul
+
+
+
+
+
+
+
+
+
 
 
