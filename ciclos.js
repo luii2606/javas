@@ -114,3 +114,56 @@ const {nombre: nombre1, edad: age, ciudad: city, username = "valen"} = persona;
 console.log(nombre1, age, city, username);
 // console.log(persona.nombre); 
 // console.log(persona["edad"]); 
+
+// numeros amigos
+
+
+// let a = 220;
+// let b = 284;
+
+// const amigos = (a,b) =>{
+//     let sumaA =0;
+//     let sumaB= 0;
+//     for (let i = 1; i < a; i++) {
+//         if (a % 1 == 0) {
+//             sumaA= sumaA+ i;
+//         }
+//     }
+//     for (let i = 1; i < b; i++) {
+//         if (b % 1 == 0) {
+//             sumaB= sumaB+ i;
+//         }
+//         if (sumaA === b && sumaB== a) {
+//             return true;
+            
+//         }
+//         else{
+//             return false;
+//         }
+//     }
+// }
+// let= sonAmigos = amigos (a,b);
+// console.log(sonAmigos);
+
+let p = 6;
+let sumap = 0;
+
+
+for (let i = 1; i < p; i++) {
+    if (p % 1 == 0) {
+        sumap = sumap+ i;
+    }
+
+}
+if (sumap == p) {
+    console.log("perfecto");
+    
+}
+else{
+    console.log("no es perfecto");
+}
+
+
+
+
+   
